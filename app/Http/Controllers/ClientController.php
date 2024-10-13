@@ -72,11 +72,11 @@ class ClientController extends Controller
             }else{
                 $image_path = public_path('images').'/'.$data->image;
                 if (file_exists($image_path)) {
-                    unlink($image_path);
+                    // unlink($image_path);
                 }
                 $thumbnail_path = public_path('images/thumbnail').'/'.$data->image;
                 if (file_exists($thumbnail_path)) {
-                unlink($thumbnail_path);
+                // unlink($thumbnail_path);
                 }
             }
             $originalImage= $request->file('image');
